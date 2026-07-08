@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Adee | Boutique Children's Clothing</title>
+  <meta name="description" content="Born from a passion for childhood. Discover the story behind Adee Clothing — premium boutique children's wear for babies, girls, and boys.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand:        #784C36;
+      --brand-light:  #B48D77;
+      --text-primary: #212326;
+      --text-dark:    #1A1B18;
+      --white:        #FFFFFF;
+      --surface:      #F3F3F3;
+      --surface-warm: #F4F2F0;
+      --surface-alt:  #EDEAE6;
+      --border:       #D2D5D9;
+      --border-warm:  #D6CFC8;
+      --text-muted:   #42474C;
+      --text-subtle:  #6B7177;
+      --font-display: 'Platypi', Georgia, serif;
+      --font-body:    'Josefin Sans', sans-serif;
+      --content-w:    1320px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text-primary);
+      font-size: 16px;
+      background: var(--surface-warm);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    /* ── Announcement Bar ─────────────────────────────── */
+    .announce {
+      height: 36px;
+      background: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .announce p {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.057em;
+      color: var(--white);
+      text-transform: uppercase;
+    }
+
+    /* ── Sticky Header ─────────────────────────────────── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 300;
+      background: var(--white);
+      box-shadow: 0 0.95px 0 rgba(210, 213, 217, 0.3);
+    }
+    .header-inner {
+      max-width: 1520px;
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 87px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-left, .header-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .header-left { flex: 0 0 200px; }
+    .header-right { flex: 0 0 200px; justify-content: flex-end; }
+    .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 12px;
+      width: 103px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo img {
+      width: 103px;
+      height: 50px;
+      object-fit: contain;
+    }
+    .icon-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-primary);
+      padding: 0;
+    }
+    .icon-btn svg { width: 19px; height: 19px; }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      list-style: none;
+      padding: 0 200px;
+      height: 36px;
+      border-top: 1px solid transparent;
+    }
+    .main-nav li a {
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+      transition: color 0.2s;
+    }
+    .main-nav li a:hover { color: var(--brand); }
+    .main-nav .bon-ami a {
+      background: linear-gradient(90deg, #CAB3A8 0%, #FFFFFF 100%);
+    }
+
+    /* ── Hero ──────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      height: 685px;
+      background: #D5C8C2 url('hero.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+    }
+    .hero__content {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      padding: 0 60px;
+      width: 100%;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 300;
+      line-height: 1.143;
+      color: var(--text-primary);
+      max-width: 480px;
+    }
+    .hero__sub {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.8;
+      color: rgba(33, 35, 38, 0.68);
+      max-width: 420px;
+      margin-top: 13px;
+    }
+
+    /* ── Section Nav ───────────────────────────────────── */
+    .section-nav {
+      position: sticky;
+      top: 123px;
+      z-index: 100;
+      height: 50px;
+      background: var(--surface-warm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border-warm);
+    }
+    .section-nav__list {
+      display: flex;
+      list-style: none;
+      gap: 0;
+    }
+    .section-nav__list a {
+      display: flex;
+      align-items: center;
+      padding: 10px 24px;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.118em;
+      text-transform: uppercase;
+      color: rgba(33, 35, 38, 0.5);
+      transition: color 0.2s;
+    }
+    .section-nav__list a.active,
+    .section-nav__list a:hover { color: var(--brand); }
+
+    /* ── Our Story ─────────────────────────────────────── */
+    .our-story {
+      display: flex;
+      min-height: 706px;
+    }
+    .our-story__image {
+      flex: 0 0 calc(100% * 1112 / 1920);
+      background: #D5C8C2 url('passion.png') center/cover no-repeat;
+      min-height: 500px;
+    }
+    .our-story__image::after {
+      content: none;
+    }
+    .our-story__text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 80px 80px 80px 100px;
+      gap: 43px;
+    }
+    .our-story__text h2 {
+      font-family: var(--font-display);
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 1.204;
+      color: var(--text-primary);
+      text-align: right;
+    }
+    .our-story__text p {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.636;
+      color: rgba(33, 35, 38, 0.72);
+      text-align: right;
+      max-width: 598px;
+    }
+
+    /* ── Mission ───────────────────────────────────────── */
+    .mission {
+      position: relative;
+      overflow: hidden;
+      background: var(--surface-alt);
+      padding: 99px 80px;
+    }
+    .mission__quote-img {
+      position: absolute;
+      right: 40px;
+      top: 0;
+      opacity: 0.18;
+      filter: brightness(0.4);
+      pointer-events: none;
+      user-select: none;
+    }
+    .mission__inner {
+      max-width: 1023px;
+      margin: 0 auto;
+    }
+    .mission h2 {
+      font-family: var(--font-display);
+      font-size: 30px;
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.1;
+      color: #000000;
+    }
+    .mission p {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(0, 0, 0, 0.68);
+      margin-top: 30px;
+      max-width: 1023px;
+    }
+
+    /* ── Collections Section ───────────────────────────── */
+    .collection-section {
+      padding: 80px;
+      max-width: var(--content-w);
+      margin: 0 auto;
+    }
+    .collection-section__eyebrow {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 14px;
+    }
+    .collection-section h2 {
+      font-family: var(--font-display);
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 1.229;
+      color: var(--text-primary);
+      max-width: 710px;
+      margin-bottom: 60px;
+    }
+    .collection-article {
+      display: flex;
+      align-items: stretch;
+      gap: 96px;
+      border-top: 1px solid var(--border-warm);
+    }
+    .collection-article__image {
+      flex: 1;
+      min-height: 600px; height: 100%;
+      background: #D5C8C2;
+      background-image:
+        linear-gradient(135deg, rgba(180, 163, 153, 0.4), rgba(210, 198, 188, 0.3));
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      border-radius: 2px;
+    }
+    .collection-article__image--baby {
+      background: #D5C8C2 url('baby clothing.png') center/cover no-repeat;
+    }
+    .collection-article__image--girls {
+      background: #D5C8C2 url('girl clothing.png') center/cover no-repeat;
+    }
+    .collection-article__image--boys {
+      background: #D5C8C2 url('boy clothing.png') center/cover no-repeat;
+    }
+    .collection-article__image--bonami {
+      background: #D5C8C2 url('bon ami.png') center/cover no-repeat;
+    }
+    .collection-article__content {
+      flex: 0 0 405px;
+      display: flex;
+      flex-direction: column;
+      padding: 78px 40px;
+      gap: 21px;
+    }
+    .collection-article__content--wide { flex: 0 0 633px; }
+    .collection-article__label {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--brand);
+    }
+    .collection-article__content h3 {
+      font-family: var(--font-display);
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--text-primary);
+    }
+    .collection-article__content p {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(33, 35, 38, 0.68);
+    }
+    .collection-link {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 14.5px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-top: 4px;
+      transition: opacity 0.2s;
+    }
+    .collection-link:hover { opacity: 0.7; }
+
+    /* Girls row has image on right */
+    .collection-article--reverse {
+      flex-direction: row-reverse;
+    }
+
+    /* ── Why Adee ──────────────────────────────────────── */
+    .why-adee {
+      background: var(--surface-alt);
+      padding: 81px 80px;
+    }
+    .why-adee__inner {
+      max-width: 1002px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+    }
+    .why-adee h2 {
+      font-family: var(--font-display);
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--text-primary);
+    }
+    .why-adee p {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(33, 35, 38, 0.68);
+    }
+
+    /* ── Footer ────────────────────────────────────────── */
+    .site-footer {
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      padding: 68px 80px 40px;
+    }
+    .footer-main {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      gap: 90px;
+      margin-bottom: 62px;
+    }
+    .footer-logo {
+      flex-shrink: 0;
+      margin-top: -4px;
+    }
+    .footer-logo img {
+      width: 103px;
+      height: 50px;
+      object-fit: contain;
+    }
+    .footer-columns {
+      display: flex;
+      gap: 19px;
+      flex: 1;
+    }
+    .footer-col {
+      flex: 1;
+      min-width: 160px;
+    }
+    .footer-col h4 {
+      font-family: var(--font-display);
+      font-size: 9.5px;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+      margin-bottom: 30px;
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col ul li { margin-bottom: 16px; }
+    .footer-col ul li a {
+      font-family: var(--font-body);
+      font-size: 15.2px;
+      font-weight: 400;
+      letter-spacing: 0.0375em;
+      color: var(--text-primary);
+      transition: color 0.2s;
+    }
+    .footer-col ul li a:hover { color: var(--brand); }
+    .footer-col p {
+      font-family: var(--font-body);
+      font-size: 13.3px;
+      font-weight: 400;
+      line-height: 1.846;
+      letter-spacing: 0.043em;
+      color: var(--text-primary);
+    }
+
+    .footer-newsletter {
+      flex: 0 0 282px;
+    }
+    .footer-newsletter h4 {
+      font-family: var(--font-display);
+      font-size: 9.5px;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+      margin-bottom: 28px;
+    }
+    .footer-newsletter form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-newsletter input[type="email"] {
+      height: 43px;
+      border: 1px solid rgba(0,0,0,0.14);
+      padding: 0 12px;
+      font-family: var(--font-body);
+      font-size: 13.3px;
+      color: var(--text-muted);
+      background: var(--white);
+      outline: none;
+    }
+    .footer-newsletter input[type="email"]:focus {
+      border-color: var(--brand);
+    }
+    .footer-newsletter button {
+      height: 42px;
+      background: var(--brand);
+      border: none;
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .footer-newsletter button:hover { background: #8A5C45; }
+    .footer-newsletter__hint {
+      font-size: 12.4px;
+      color: var(--text-muted);
+      letter-spacing: 0.038em;
+    }
+    .footer-social {
+      margin-top: 16px;
+    }
+    .footer-social h4 {
+      font-family: var(--font-display);
+      font-size: 9.5px;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+      margin-bottom: 14px;
+    }
+    .footer-social__icons {
+      display: flex;
+      gap: 18px;
+    }
+    .footer-social__icons a {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 12px;
+      transition: background 0.2s;
+    }
+    .footer-social__icons a:hover { background: var(--brand); }
+
+    .footer-bottom {
+      max-width: var(--content-w);
+      margin: 0 auto;
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-bottom__copy {
+      font-size: 11.4px;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .footer-bottom__copy a {
+      color: var(--text-primary);
+    }
+    .footer-bottom__links {
+      display: flex;
+      list-style: none;
+      gap: 0;
+      flex-wrap: wrap;
+      font-size: 11.4px;
+      letter-spacing: 0.05em;
+    }
+    .footer-bottom__links li { display: flex; align-items: center; }
+    .footer-bottom__links li a { color: var(--text-primary); padding: 4px 8px; }
+    .footer-bottom__links li a:hover { color: var(--brand); }
+    .footer-bottom__links .sep {
+      color: var(--text-muted);
+      padding: 0 2px;
+    }
+    .footer-locale {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12.4px;
+      color: var(--text-muted);
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Mobile Header ─────────────────────────────────── */
+    .mobile-header {
+      display: none;
+      position: sticky;
+      top: 0;
+      z-index: 300;
+      height: 62px;
+      background: #FFFFFF;
+      box-shadow: 0 0.95px 0 rgba(210, 213, 217, 0.3);
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 14px;
+    }
+    .mobile-header__hamburger {
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 49px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    .mobile-header__hamburger svg {
+      width: 19px;
+      height: 19px;
+    }
+    .mobile-header__logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 9px;
+      width: 90px;
+      height: 44px;
+    }
+    .mobile-header__logo img {
+      width: 90px;
+      height: 44px;
+      object-fit: contain;
+    }
+    .mobile-header__actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .mobile-header__actions .icon-btn {
+      width: 32px;
+      height: 32px;
+    }
+    .mobile-header__actions .icon-btn svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    /* ── Mobile Footer ─────────────────────────────────── */
+    .mobile-footer {
+      display: none;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      padding: 0 14px;
+    }
+    .mobile-footer__logo {
+      display: flex;
+      justify-content: center;
+      padding: 14px 0;
+    }
+    .mobile-footer__logo img {
+      width: 90px;
+      height: 44px;
+      object-fit: contain;
+    }
+    .mobile-footer__accordion {
+      border-bottom: none;
+    }
+    .mobile-footer__accordion details {
+      border-top: 1px solid var(--border);
+    }
+    .mobile-footer__accordion summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 46px;
+      padding: 0;
+      cursor: pointer;
+      list-style: none;
+    }
+    .mobile-footer__accordion summary::-webkit-details-marker { display: none; }
+    .mobile-footer__accordion summary h4 {
+      font-family: var(--font-display);
+      font-size: 11.4px;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+    }
+    .mobile-footer__accordion .mfa-chevron {
+      width: 9px;
+      height: 6px;
+      transition: transform 0.2s;
+    }
+    .mobile-footer__accordion details[open] .mfa-chevron {
+      transform: rotate(180deg);
+    }
+    .mobile-footer__accordion ul {
+      list-style: none;
+      padding: 0 0 16px;
+    }
+    .mobile-footer__accordion ul li {
+      margin-bottom: 12px;
+    }
+    .mobile-footer__accordion ul li a {
+      font-family: var(--font-body);
+      font-size: 15.2px;
+      font-weight: 400;
+      letter-spacing: 0.0375em;
+      color: var(--text-primary);
+    }
+    .mobile-footer__locations {
+      padding: 0 0 16px;
+      font-family: var(--font-body);
+      font-size: 13.3px;
+      line-height: 1.846;
+      letter-spacing: 0.043em;
+      color: var(--text-primary);
+    }
+    .mobile-footer__newsletter {
+      border-top: 1px solid var(--border);
+      padding: 14px 0 0;
+    }
+    .mobile-footer__newsletter h4 {
+      font-family: var(--font-display);
+      font-size: 11.4px;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+      margin-bottom: 16px;
+    }
+    .mobile-footer__newsletter form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .mobile-footer__newsletter input[type="email"] {
+      height: 40px;
+      border: 1px solid rgba(0,0,0,0.14);
+      padding: 0 12px;
+      font-family: var(--font-body);
+      font-size: 13.3px;
+      color: var(--text-muted);
+      outline: none;
+    }
+    .mobile-footer__newsletter input[type="email"]:focus {
+      border-color: var(--brand);
+    }
+    .mobile-footer__newsletter button {
+      height: 42px;
+      background: var(--brand);
+      border: none;
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .mobile-footer__newsletter-hint {
+      font-size: 12.4px;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+    .mfsocial {
+      margin-top: 16px;
+    }
+    .mfsocial h4 {
+      font-family: var(--font-display);
+      font-size: 11.4px;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-subtle);
+      margin-bottom: 12px;
+    }
+    .mfsocial__icons {
+      display: flex;
+      gap: 18px;
+    }
+    .mfsocial__icons a {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 12px;
+    }
+    .mobile-footer__legal {
+      padding: 18px 0;
+      text-align: center;
+    }
+    .mobile-footer__copyright {
+      font-size: 11.4px;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .mobile-footer__copyright a {
+      color: var(--text-primary);
+    }
+    .mobile-footer__links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0;
+      list-style: none;
+      font-size: 11px;
+      margin-bottom: 16px;
+    }
+    .mobile-footer__links li { display: flex; align-items: center; }
+    .mobile-footer__links li a {
+      color: var(--text-primary);
+      padding: 3px 5px;
+    }
+    .mobile-footer__links .msep {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    .mobile-footer__locale {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding-bottom: 20px;
+      font-size: 12.4px;
+      color: var(--text-muted);
+    }
+
+    /* ── Responsive ────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .site-header { display: none; }
+      .mobile-header {
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 300;
+      }
+
+      /* Section nav */
+      .section-nav {
+        top: 62px;
+        width: 100%;
+        height: 52px;
+        position: sticky;
+        z-index: 100;
+        background: var(--surface-warm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .section-nav__list {
+        width: 331px;
+        height: 52px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        gap: 0;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .section-nav__list::-webkit-scrollbar { display: none; }
+      .section-nav__list a {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 14px;
+        height: 52px;
+        font-size: 8px;
+        line-height: 1.5;
+        letter-spacing: 0.2025em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .section-nav__list a.active { color: var(--brand); }
+
+      /* Hero */
+      .hero {
+        height: auto;
+        min-height: 400px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 98px 32px 48px;
+        background-position: top center;
+        background-size: cover;
+      }
+      .hero__content {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .hero h1 {
+        font-size: 32px;
+        line-height: 34px;
+        text-align: center;
+        max-width: 325px;
+      }
+      .hero__sub {
+        font-size: 13.3px;
+        line-height: 16px;
+        text-align: center;
+        max-width: 326px;
+        margin-top: 20px;
+      }
+
+      /* Our Story */
+      .our-story {
+        flex-direction: column;
+        min-height: auto;
+      }
+      .our-story__image {
+        flex: auto;
+        height: 327px;
+        min-height: 327px;
+        width: 100%;
+      }
+      .our-story__text {
+        padding: 32px 32px 48px;
+        align-items: flex-start;
+        gap: 24px;
+        border-top: 1px solid var(--border-warm);
+      }
+      .our-story__text h2 {
+        font-size: 36px;
+        line-height: 43px;
+        text-align: left;
+      }
+      .our-story__text p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+        max-width: 311px;
+      }
+
+      /* Mission */
+      .mission {
+        padding: 32px;
+      }
+      .mission__quote-img {
+        right: 0;
+        top: 0;
+        width: 158px;
+        height: auto;
+        opacity: 0.08;
+      }
+      .mission h2 {
+        font-size: 30px;
+        line-height: 44px;
+        max-width: 310px;
+      }
+      .mission p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 20px;
+      }
+
+      /* Collections */
+      .collection-section {
+        padding: 48px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .collection-section__eyebrow {
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0.22em;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+      .collection-section h2 {
+        font-size: 36px;
+        line-height: 41px;
+        text-align: center;
+        max-width: 326px;
+        margin-bottom: 48px;
+      }
+      .collection-article {
+        flex-direction: column;
+        gap: 24px;
+        border-top: none;
+        width: 100%;
+        padding: 0 0 48px;
+        align-items: center;
+      }
+      .collection-article--reverse { flex-direction: column; }
+      .collection-article__image {
+        width: 100%;
+        min-height: 218px;
+        height: auto;
+        border-radius: 0;
+      }
+      .collection-article__image--baby  { height: 218px; min-height: 218px; }
+      .collection-article__image--girls { height: 392px; min-height: 392px; }
+      .collection-article__image--boys  { height: 474px; min-height: 474px; }
+      .collection-article__image--bonami { height: 308px; min-height: 308px; }
+      .collection-article__content {
+        flex: auto;
+        width: 326px;
+        padding: 0;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .collection-article__content--wide { width: 326px; flex: auto; }
+      .collection-article__label {
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0.22em;
+      }
+      .collection-article__content h3 {
+        font-size: 28px;
+        line-height: 31px;
+      }
+      .collection-article__content p {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      .collection-link {
+        font-size: 10px;
+        letter-spacing: 0.18em;
+      }
+
+      /* Why Adee */
+      .why-adee {
+        padding: 52px 32px;
+      }
+      .why-adee__inner {
+        gap: 24px;
+      }
+      .why-adee h2 {
+        font-size: 36px;
+        line-height: 43px;
+      }
+      .why-adee p {
+        font-size: 13.3px;
+        line-height: 25px;
+      }
+
+      /* Footer */
+      .site-footer { display: none; }
+      .mobile-footer { display: block; }
+    }
+    @media (max-width: 1024px) {
+      .our-story { flex-direction: column; }
+      .our-story__image { flex: auto; min-height: 350px; }
+      .our-story__text { padding: 48px 32px; align-items: flex-start; }
+      .our-story__text h2,
+      .our-story__text p { text-align: left; }
+      .collection-article {
+        flex-direction: column;
+        gap: 40px;
+      }
+      .collection-article--reverse { flex-direction: column; }
+      .collection-article__image { width: 100%; min-height: 400px; height: auto; }
+      .collection-article__content { flex: auto; width: 100%; padding: 0; }
+      .collection-article__content--wide { flex: auto; }
+      .collection-section { padding: 40px 24px; }
+      .footer-main { flex-direction: column; gap: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announce">
+    <p>50% OFF DAYWEAR AND DRESSWEAR</p>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <button class="icon-btn" aria-label="Search">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.23">
+            <circle cx="8.5" cy="8.5" r="5.5"/>
+            <line x1="13" y1="13" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <a href="/" class="logo"><img src="https://adeeclothing.com/cdn/shop/files/adee-logo.png?v=1738474278" alt="Adee"></a>
+      <div class="header-right">
+        <button class="icon-btn" aria-label="Account">
+          <svg viewBox="0 0 15 17" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7.5" cy="5" r="4"/>
+            <path d="M1 16c0-3.5 3-6.5 6.5-6.5S14 12.5 14 16"/>
+          </svg>
+        </button>
+        <button class="icon-btn" aria-label="Cart">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="0.87">
+            <path d="M5 5.5h10l-1 7H6l-1-7z"/>
+            <path d="M6.5 8V5a3.5 3.5 0 017 0v3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Baby</a></li>
+        <li><a href="#">Girls</a></li>
+        <li><a href="#">Boys</a></li>
+        <li><a href="#">Family Daywear</a></li>
+        <li><a href="#">Family Dresswear</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Gifts</a></li>
+        <li class="bon-ami"><a href="#">Bon Ami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile Header -->
+  <header class="mobile-header">
+    <button class="mobile-header__hamburger" aria-label="Menu">
+      <svg viewBox="0 0 19 19" fill="none" stroke="#212326" stroke-width="1.07">
+        <line x1="0" y1="3.5" x2="19" y2="3.5"/>
+        <line x1="0" y1="9.5" x2="19" y2="9.5"/>
+        <line x1="0" y1="15.5" x2="19" y2="15.5"/>
+      </svg>
+    </button>
+    <a href="/" class="mobile-header__logo"><img src="https://adeeclothing.com/cdn/shop/files/adee-logo.png?v=1738474278" alt="Adee"></a>
+    <div class="mobile-header__actions">
+      <button class="icon-btn" aria-label="Search">
+        <svg viewBox="0 0 20 20" fill="none" stroke="#212326" stroke-width="1.23">
+          <circle cx="8.5" cy="8.5" r="5.5"/>
+          <line x1="13" y1="13" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <button class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 15 17" fill="none" stroke="#212326" stroke-width="1.5">
+          <circle cx="7.5" cy="5" r="4"/>
+          <path d="M1 16c0-3.5 3-6.5 6.5-6.5S14 12.5 14 16"/>
+        </svg>
+      </button>
+      <button class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 20 20" fill="none" stroke="#212326" stroke-width="0.87">
+          <path d="M5 5.5h10l-1 7H6l-1-7z"/>
+          <path d="M6.5 8V5a3.5 3.5 0 017 0v3"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__content">
+      <h1>Made for<br>the moments<br>that matter.</h1>
+      <p class="hero__sub">Premium boutique children's wear for babies, girls, and boys. Thoughtfully designed. Built for real life.</p>
+    </div>
+  </section>
+
+  <!-- Section Navigation -->
+  <nav class="section-nav">
+    <ul class="section-nav__list">
+      <li><a href="#our-story" class="active">Our Story</a></li>
+      <li><a href="#our-mission">Our Mission</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#why-adee">Why Adee</a></li>
+    </ul>
+  </nav>
+
+  <!-- Our Story -->
+  <section class="our-story" id="our-story">
+    <div class="our-story__image"></div>
+    <div class="our-story__text">
+      <h2>Born from a passion<br>for childhood.</h2>
+      <p>Adee Clothing was born from a simple passion: to celebrate childhood through clothing. As the sister label to Fame on Central, an international high-end women's fashion retailer, we brought that same eye for quality and design to children's wear. What started as a small idea has grown into a trusted boutique brand known for thoughtfully designed baby and kids' apparel. Based in New York, with stores in Cedarhurst, Pomona, and Jerusalem, we ship our pieces to families around the world.</p>
+    </div>
+  </section>
+
+  <!-- Our Mission -->
+  <section class="mission" id="our-mission">
+    <img src="quote.png" alt="" class="mission__quote-img">
+    <div class="mission__inner">
+      <h2>"Our mission is to turn every outfit into a happy memory."</h2>
+      <p>Our mission is to turn every outfit into a happy memory. The way families shop for kids has changed, and we've built our brand around that shift. Parents don't want one outfit for the photo and a different one for the rest of the day. They want pieces that hold up to real life and still look beautiful when the moment matters. That's why we design thoughtful, versatile pieces, many available in matching sets so siblings can coordinate with ease, all backed by our commitment to customer satisfaction.</p>
+    </div>
+  </section>
+
+  <!-- Collections -->
+  <section class="collection-section" id="collections">
+    <p class="collection-section__eyebrow">What We Offer</p>
+    <h2>Designed for every<br>stage of childhood.</h2>
+
+    <!-- Baby -->
+    <article class="collection-article">
+      <div class="collection-article__image collection-article__image--baby"></div>
+      <div class="collection-article__content">
+        <p class="collection-article__label">0 &ndash; 24 Months</p>
+        <h3>Baby<br>Clothing</h3>
+        <p>Our baby clothes is made for the sweetest little moments, with soft rompers, cozy bodysuits, and coordinated layette sets designed to make cuddles cozier and milestones more comfortable.</p>
+        <a href="#" class="collection-link">Shop Baby &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Girls -->
+    <article class="collection-article collection-article--reverse">
+      <div class="collection-article__image collection-article__image--girls"></div>
+      <div class="collection-article__content">
+        <p class="collection-article__label">Girls' Collection</p>
+        <h3>Girls<br>Clothing</h3>
+        <p>For our girls, we bring outfits full of joy. Dresses and sets made for twirls, giggles, and all the wonderful chaos of childhood, including matching sibling sets for those extra-special moments.</p>
+        <a href="#" class="collection-link">Shop Girls &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Boys -->
+    <article class="collection-article">
+      <div class="collection-article__image collection-article__image--boys"></div>
+      <div class="collection-article__content collection-article__content--wide">
+        <p class="collection-article__label">Boys' Collection</p>
+        <h3>Boys<br>Clothing</h3>
+        <p>Our boys clothing is ready for action, with playful shorts, fun tees, and outfits built to keep up with every adventure they dream up.</p>
+        <a href="#" class="collection-link">Shop Boys &rarr;</a>
+      </div>
+    </article>
+
+    <!-- Bon Ami -->
+    <article class="collection-article collection-article--reverse">
+      <div class="collection-article__image collection-article__image--bonami"></div>
+      <div class="collection-article__content">
+        <p class="collection-article__label">Accessories</p>
+        <h3>Bon<br>Ami</h3>
+        <p>With our Bon Ami line, we add little touches of elegance, like stylish carriage bags, so you have something special for every family outing.</p>
+        <a href="#" class="collection-link">Shop Bon Ami &rarr;</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- Why Adee -->
+  <section class="why-adee" id="why-adee">
+    <div class="why-adee__inner">
+      <h2>Clothes that move<br>through the whole week.</h2>
+      <p>Most children's brands build collections around single events: a holiday photo, a birthday, a special occasion. We take a different approach. We treat those moments as part of a regular week, not the whole point of the wardrobe, with clothes that move easily from the playground to family events to holiday photos. Everything we make is designed to hold up to real life while still looking beautiful when it matters most. We're proud to be part of your family's happiest moments.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a href="/" class="footer-logo"><img src="https://adeeclothing.com/cdn/shop/files/adee-logo.png?v=1738474278" alt="Adee"></a>
+
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">All Baby</a></li>
+            <li><a href="#">All Boys</a></li>
+            <li><a href="#">All Girls</a></li>
+            <li><a href="#">Pajamas</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">All Collections</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <ul>
+            <li><a href="#">Returns Portal</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Adee's Insights</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Why Adee</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Locations</h4>
+          <p>Pomona<br>Cedarhurst<br>Jerusalem</p>
+        </div>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Keep me Posted</h4>
+        <form>
+          <input type="email" placeholder="Enter email here" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="footer-newsletter__hint">Get ready for some seriously beautiful content.</p>
+        <div class="footer-social">
+          <h4>More precious moments</h4>
+          <div class="footer-social__icons">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Pinterest">P</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom__copy">
+        <span>&copy; 2026,</span>
+        <a href="/">Adee</a>
+        <span>. All rights reserved.</span>
+      </div>
+      <ul class="footer-bottom__links">
+        <li><span class="sep">·</span></li>
+        <li><a href="#">Refund policy</a></li>
+        <li><span class="sep">·</span></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><span class="sep">·</span></li>
+        <li><a href="#">Terms of service</a></li>
+        <li><span class="sep">·</span></li>
+        <li><a href="#">Shipping policy</a></li>
+        <li><span class="sep">·</span></li>
+        <li><a href="#">Contact information</a></li>
+      </ul>
+      <div class="footer-locale">United States (USD $)</div>
+    </div>
+  </footer>
+
+  <!-- Mobile Footer -->
+  <footer class="mobile-footer">
+    <div class="mobile-footer__logo">
+      <img src="https://adeeclothing.com/cdn/shop/files/adee-logo.png?v=1738474278" alt="Adee">
+    </div>
+
+    <div class="mobile-footer__accordion">
+      <details>
+        <summary>
+          <h4>Shop</h4>
+          <svg class="mfa-chevron" viewBox="0 0 9 6" fill="none">
+            <path d="M0 0l4.5 5.5L9 0" fill="#42474C"/>
+          </svg>
+        </summary>
+        <ul>
+          <li><a href="#">All Baby</a></li>
+          <li><a href="#">All Boys</a></li>
+          <li><a href="#">All Girls</a></li>
+          <li><a href="#">Pajamas</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">All Collections</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <h4>More</h4>
+          <svg class="mfa-chevron" viewBox="0 0 9 6" fill="none">
+            <path d="M0 0l4.5 5.5L9 0" fill="#42474C"/>
+          </svg>
+        </summary>
+        <ul>
+          <li><a href="#">Returns Portal</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Adee's Insights</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <h4>Locations</h4>
+          <svg class="mfa-chevron" viewBox="0 0 9 6" fill="none">
+            <path d="M0 0l4.5 5.5L9 0" fill="#42474C"/>
+          </svg>
+        </summary>
+        <div class="mobile-footer__locations">Pomona<br>Cedarhurst<br>Jerusalem</div>
+      </details>
+    </div>
+
+    <div class="mobile-footer__newsletter">
+      <h4>Keep me Posted</h4>
+      <form>
+        <input type="email" placeholder="Enter email here" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="mobile-footer__newsletter-hint">Get ready for some seriously beautiful content.</p>
+      <div class="mfsocial">
+        <h4>More precious moments</h4>
+        <div class="mfsocial__icons">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Pinterest">P</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-footer__legal">
+      <p class="mobile-footer__copyright">
+        <span>&copy; 2026,</span>
+        <a href="/">Adee</a>
+        <span>. All rights reserved.</span>
+      </p>
+      <ul class="mobile-footer__links">
+        <li><span class="msep">·</span></li>
+        <li><a href="#">Refund policy</a></li>
+        <li><span class="msep">·</span></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><span class="msep">·</span></li>
+        <li><a href="#">Terms of service</a></li>
+        <li><span class="msep">·</span></li>
+        <li><a href="#">Shipping policy</a></li>
+        <li><span class="msep">·</span></li>
+        <li><a href="#">Contact information</a></li>
+      </ul>
+      <div class="mobile-footer__locale">United States (USD $)</div>
+    </div>
+  </footer>
+
+  <script>
+    // Active section highlighting on scroll
+    (function() {
+      const navLinks = document.querySelectorAll('.section-nav__list a');
+      const sections = [];
+      navLinks.forEach(link => {
+        const id = link.getAttribute('href');
+        if (id && id.startsWith('#')) {
+          const el = document.querySelector(id);
+          if (el) sections.push({ el, link });
+        }
+      });
+
+      function onScroll() {
+        let current = sections[0];
+        sections.forEach(s => {
+          if (s.el.getBoundingClientRect().top <= 180) current = s;
+        });
+        sections.forEach(s => s.link.classList.remove('active'));
+        if (current) current.link.classList.add('active');
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+
+</body>
+</html>
