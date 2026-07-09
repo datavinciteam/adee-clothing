@@ -140,8 +140,8 @@
     /* ── Hero ──────────────────────────────────────────── */
     .hero {
       position: relative;
-      height: 685px;
-      background: #D5C8C2 url('hero.png') center/cover no-repeat;
+      height: 450px;
+      background: #D5C8C2 url('HERO 3.png') center/cover no-repeat;
       display: flex;
       align-items: center;
     }
@@ -161,11 +161,11 @@
     }
     .hero__sub {
       font-family: var(--font-body);
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 1.8;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.5;
       color: rgba(33, 35, 38, 0.68);
-      max-width: 420px;
+      max-width: 360px;
       margin-top: 13px;
     }
 
@@ -845,6 +845,10 @@
 
     /* ── Responsive ────────────────────────────────────── */
     @media (max-width: 768px) {
+      html, body {
+        overflow-x: hidden;
+        max-width: 100vw;
+      }
       .site-header { display: none; }
       .mobile-header {
         display: flex;
@@ -857,7 +861,7 @@
       .section-nav {
         top: 62px;
         width: 100%;
-        height: 52px;
+        height: auto;
         position: sticky;
         z-index: 100;
         background: var(--surface-warm);
@@ -866,33 +870,38 @@
         justify-content: center;
       }
       .section-nav__list {
-        width: 331px;
-        height: 52px;
-        overflow-x: auto;
-        overflow-y: hidden;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         padding: 0;
         gap: 0;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
       }
-      .section-nav__list::-webkit-scrollbar { display: none; }
       .section-nav__list a {
         flex-shrink: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 16px 14px;
-        height: 52px;
-        font-size: 8px;
+        padding: 10px 12px;
+        height: auto;
+        font-size: 12px;
         line-height: 1.5;
         letter-spacing: 0.2025em;
         text-transform: uppercase;
         white-space: nowrap;
       }
       .section-nav__list a.active { color: var(--brand); }
+      .section-nav__break {
+        width: 100%;
+        height: 0;
+        flex-basis: 100%;
+        border-bottom: 1px solid #D2D5D9;
+        margin: 0 12px;
+      }
 
       #our-story,
       #our-mission,
@@ -903,30 +912,54 @@
 
       /* Hero */
       .hero {
-        height: auto;
-        min-height: 400px;
+        position: relative;
+        width: 100%;
+        height: 543px;
+        background: #F3F3F3;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 98px 32px 48px;
-        background-position: top center;
-        background-size: cover;
+        padding: 12px 32px 44px;
+        justify-content: flex-start;
+      }
+      .hero::before {
+        content: '';
+        position: absolute;
+        height: 543px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: url('HERO 3.png') bottom / auto 90% no-repeat;
+        pointer-events: none;
+      }
+      .hero::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 90px;
+        background: linear-gradient(to bottom, #F3F3F3 0%, #F3F3F3 50%, rgba(243, 243, 243, 0) 100%);
+        pointer-events: none;
       }
       .hero__content {
+        position: relative;
+        z-index: 1;
         padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
       }
       .hero h1 {
-        font-size: 32px;
-        line-height: 34px;
+        font-size: 28px;
+        line-height: 30px;
         text-align: center;
         max-width: 325px;
       }
       .hero__sub {
-        font-size: 13.3px;
-        line-height: 16px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 1.5;
         text-align: center;
         max-width: 326px;
         margin-top: 20px;
@@ -1025,12 +1058,13 @@
       .collection-article__image--bonami { height: 308px; min-height: 308px; }
       .collection-article__content {
         flex: auto;
-        width: 326px;
+        width: 100%;
+        max-width: 326px;
         padding: 0;
         gap: 12px;
         align-items: flex-start;
       }
-      .collection-article__content--wide { width: 326px; flex: auto; }
+      .collection-article__content--wide { width: 100%; max-width: 326px; flex: auto; }
       .collection-article__label {
         font-size: 10px;
         line-height: 10px;
@@ -1184,6 +1218,7 @@
       <li><a href="#our-story" class="active">Our Story</a></li>
       <li><a href="#our-mission">Our Mission</a></li>
       <li><a href="#collections">Collections</a></li>
+      <li class="section-nav__break" aria-hidden="true"></li>
       <li><a href="#why-adee">Why Adee</a></li>
     </ul>
   </nav>

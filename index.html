@@ -261,7 +261,13 @@
     .sg-subtabs button.is-on {
       background: #784C36; border-color: #784C36; color: #FFFFFF;
     }
+    .sg-subtabs button.is-on img {
+      filter: brightness(0) invert(1);
+    }
     .sg-subtabs button:hover:not(.is-on) { border-color: #784C36; color: #784C36; }
+    .sg-subtabs button:hover:not(.is-on) img {
+      filter: brightness(0) saturate(100%) invert(29%) sepia(36%) saturate(624%) hue-rotate(337deg) brightness(92%) contrast(88%);
+    }
 
     /* –– Sub-panels –– */
     .sg-subpanel { display: none; margin-bottom: 56px; }
@@ -1062,7 +1068,7 @@
         <button role="tab" id="subtab-bloomers"
           aria-selected="false" aria-controls="subpanel-bloomers"
           onclick="switchSubtab('bloomers')">
-          <img src="bloomers-icon-nobg.png" alt="" width="14" height="14" style="flex-shrink:0;">
+          <img src="bloomers.png" alt="" width="14" height="14" style="flex-shrink:0;">
           Bloomers &amp; Bloomer Sets
         </button>
 
@@ -1137,7 +1143,7 @@
               <tr>
                 <th></th>
                 <th>1M</th><th>3M</th><th>6M</th>
-                <th>9M</th><th>12M</th><th>18M *</th>
+                <th>9M</th><th>12M</th><th>18M</th>
               </tr>
             </thead>
             <tbody>
@@ -1148,7 +1154,7 @@
                 <td><span class="uv">15&Prime;</span><span class="mv">38.1 cm</span></td>
                 <td><span class="uv">15.5&Prime;</span><span class="mv">39.4 cm</span></td>
                 <td><span class="uv">16&Prime;</span><span class="mv">40.6 cm</span></td>
-                <td>-</td>
+                <td><span class="uv">25.3&Prime;</span><span class="mv">64.1 cm</span></td>
               </tr>
               <tr class="alt-row">
                 <th scope="row">Hat Width</th>
@@ -1157,7 +1163,7 @@
                 <td><span class="uv">16.5&Prime;</span><span class="mv">41.9 cm</span></td>
                 <td><span class="uv">17.5&Prime;</span><span class="mv">44.5 cm</span></td>
                 <td><span class="uv">18.5&Prime;</span><span class="mv">47 cm</span></td>
-                <td>-</td>
+                <td><span class="uv">21&ndash;25&Prime;</span><span class="mv">53.3&ndash;63.5 cm</span></td>
               </tr>
             </tbody>
           </table>
@@ -1661,7 +1667,7 @@
         <div class="sg-how-body" id="how-stretchies">
           <div class="sg-how-body__layout">
             <div class="sg-how-illustration">
-              <img src="stretchies_size%20chart.png" alt="How to measure garment length, chest and hip on a baby stretchy" loading="lazy">
+              <img src="stretchies_size_chart.png" alt="How to measure garment length, chest and hip on a baby stretchy" loading="lazy">
             </div>
             <div class="sg-timeline">
               <div class="sg-timeline-item"><div class="sg-timeline-dot"></div><div><p class="sg-timeline-label">Garment Length</p><p class="sg-timeline-text">Measure from the top of the shoulder seam to the bottom of the foot.</p></div></div>
@@ -1833,7 +1839,7 @@
           </svg>
           <h4 class="sg-seo__card-heading">When in doubt, size up</h4>
         </div>
-        <p class="sg-seo__card-body">Babies grow faster than anyone expects. A slightly larger piece simply means a few more precious months in it. Browse the full <a href="/collections/baby-clothes">baby collection</a>.</p>
+        <p class="sg-seo__card-body">Babies grow faster than anyone expects. A slightly larger piece simply means a few more precious months in it. <a href="/collections/baby-clothes">Browse the full baby collection.</a></p>
       </div>
 
     </div>
