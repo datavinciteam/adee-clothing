@@ -68,7 +68,7 @@
     /* ── Header ── */
     .site-header {
       position: sticky; top: 0; z-index: 300;
-      background: rgba(255,255,255,0.998);
+      background: #FFFFFF;
       box-shadow: 0 0.95px 0 rgba(210,213,217,0.3);
     }
     .header-top {
@@ -91,7 +91,7 @@
     .icon-btn svg { width: 19px; height: 19px; }
 
     /* ── Navigation ── */
-    .nav-bar { border-top: 0.95px solid rgba(210,213,217,0.3); }
+    .nav-bar { border-top: 0.95px solid rgba(210,213,217,0.3); background: #FFF; }
     .nav-list {
       display: flex; align-items: center; justify-content: center; gap: 0;
       max-width: var(--content-w); margin: 0 auto; padding: 0 20px; height: 36px;
@@ -510,7 +510,7 @@
       .photo-hero { min-height: auto; }
       .photo-hero__overlay { background: rgba(0,0,0,0.35); }
       .photo-hero__bg { position: relative; max-height: 45vh; object-fit: cover; }
-      .photo-hero__content { flex: none; padding: 36px 20px; color: var(--text-primary); background: var(--white); }
+      .photo-hero__content { flex: none; padding: 36px 20px; color: var(--text-primary); background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
       .photo-hero__heading { font-size: 36px; color: var(--text-primary); }
       .photo-hero__subhead { font-size: 14px; margin-bottom: 18px; color: var(--text-muted); }
       .photo-hero__ctas { flex-direction: row; flex-wrap: nowrap; gap: 10px; }
@@ -525,7 +525,7 @@
       .shop-cat-tile__tag { font-size: 8.5px; padding: 4px 8px; top: 8px; left: 8px; }
       .video-hero { height: 400px; }
       .video-hero-title { font-size: 28px; }
-      .site-header { background: #E4DFD3; }
+      .site-header { background: #FFF; position: static; box-shadow: none; border-bottom: 1px solid var(--border); }
       .nav-bar { display: none; }
       .header-top { height: 56px; }
       .header-logo { width: 80px; height: 40px; }
