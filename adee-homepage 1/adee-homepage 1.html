@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adee: Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits</title>
+  <meta name="description" content="Experience super-soft fabrics in boys' & girls' baby kid's clothing with ultimate quality, comfort, and style. Perfect fit & design for every occasion.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #784C36;
+      --brand-light: #B48D77;
+      --brand-accent: #A36D52;
+      --text-primary: #212326;
+      --text-dark: #1A1B18;
+      --text-muted: #42474C;
+      --text-subtle: #6B7177;
+      --white: #FFFFFF;
+      --surface: #F3F3F3;
+      --surface-warm: #F4F2F0;
+      --surface-dark: #212326;
+      --border: #D2D5D9;
+      --font-display: 'Platypi', Georgia, serif;
+      --font-body: 'Josefin Sans', sans-serif;
+      --content-w: 1600px;
+      --transition: 0.3s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text-primary);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { display: block; max-width: 100%; height: auto; }
+    button { cursor: pointer; font-family: inherit; }
+    ul { list-style: none; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+    /* ── Announcement Bar ── */
+    .announce-bar {
+      background: #000;
+      color: var(--white);
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.057em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      position: relative;
+      z-index: 310;
+    }
+    .announce-dot {
+      width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.45);
+      flex-shrink: 0;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      position: sticky; top: 0; z-index: 300;
+      background: rgba(255,255,255,0.998);
+      box-shadow: 0 0.95px 0 rgba(210,213,217,0.3);
+    }
+    .header-top {
+      max-width: var(--content-w);
+      margin: 0 auto; padding: 14px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+      position: relative; height: 67px;
+    }
+    .header-icons { display: flex; align-items: center; gap: 8px; z-index: 1; }
+    .header-logo {
+      position: absolute; left: 50%; transform: translateX(-50%);
+      width: 103px; height: 50px; display: flex; align-items: center; justify-content: center;
+    }
+    .header-logo img { width: 103px; height: 50px; object-fit: contain; }
+    .icon-btn {
+      background: none; border: none; width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-primary); padding: 0;
+    }
+    .icon-btn svg { width: 19px; height: 19px; }
+
+    /* ── Navigation ── */
+    .nav-bar { border-top: 0.95px solid rgba(210,213,217,0.3); }
+    .nav-list {
+      display: flex; align-items: center; justify-content: center; gap: 0;
+      max-width: var(--content-w); margin: 0 auto; padding: 0 20px; height: 36px;
+    }
+    .nav-list a {
+      display: flex; align-items: center; padding: 8px 16px;
+      font-size: 11px; font-weight: 400; letter-spacing: 0.07em;
+      text-transform: uppercase; white-space: nowrap;
+      transition: color var(--transition);
+    }
+    .nav-list a:hover { color: var(--brand); }
+    .nav-list .nav-highlight a { background: linear-gradient(90deg, #CAB3A8 0%, #FFF 100%); }
+
+    /* ── Hero / Full-width Banner ── */
+    /* ── Hero Grid ── */
+    .hero {
+      padding: 0 20px 4px;
+      background: var(--white);
+    }
+    .hero-inner {
+      max-width: var(--content-w);
+      margin: 0 auto;
+    }
+    .hero-top-overlay {
+      display: none;
+    }
+    .hero-eyebrow {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--brand);
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    .hero-heading {
+      font-family: var(--font-display);
+      font-size: 48px;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      text-align: center;
+      margin-bottom: 20px;
+      line-height: 1.15;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
+    }
+    .hero-tile {
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      background-size: cover;
+      background-position: center;
+      border-radius: 0;
+      aspect-ratio: 1 / 1;
+      transition: transform 0.3s ease;
+    }
+    .hero-tile:hover {
+      transform: scale(1.02);
+    }
+    .hero-tile::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 55%);
+      z-index: 1;
+    }
+    .hero-tile::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 40%;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.35) 0%, transparent 100%);
+      z-index: 1;
+    }
+    .hero-tile-category {
+      position: absolute;
+      top: 72%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: center;
+      color: #FFFFFF;
+      padding-bottom: 10px;
+    }
+    .hero-tile-category::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 1px;
+      background: #FFFFFF;
+      opacity: 0.7;
+    }
+
+    .hero-tile--baby   { background-position: center 35%; }
+    .hero-tile--girls  { background-position: center 25%; }
+    .hero-tile--boys   { background-position: center 30%; }
+    .hero-tile--family { background-position: center 25%; }
+
+    /* ── Trust Band ── */
+    .trust-band {
+      background: #F4F2F0;
+      padding: 18px 0;
+      overflow: hidden;
+    }
+    .trust-band__track {
+      display: flex;
+      gap: 48px;
+      width: max-content;
+      animation: trust-scroll 30s linear infinite;
+    }
+    .trust-band__track:hover {
+      animation-play-state: paused;
+    }
+    @keyframes trust-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .trust-band__item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    a.trust-band__item:hover .trust-band__label {
+      color: var(--brand);
+    }
+    .trust-band__icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--brand);
+      flex-shrink: 0;
+    }
+    .trust-band__icon svg {
+      width: 100%;
+      height: 100%;
+    }
+    .trust-band__label {
+      font-family: var(--font-body);
+      font-size: 13.3px;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+      color: var(--text-dark);
+    }
+    .trust-band__sep {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--brand-light);
+      flex-shrink: 0;
+      opacity: 0.6;
+    }
+
+    /* ── Video Hero ── */
+    .video-hero {
+      position: relative; width: 100%; height: 650px; overflow: hidden;
+      background: var(--surface);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .video-hero video {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .video-hero .overlay {
+      position: absolute; inset: 0;
+      background: rgba(0,0,0,0.04);
+    }
+    .video-hero-content {
+      position: relative; z-index: 2; text-align: center;
+      display: flex; flex-direction: column; align-items: center; gap: 24px;
+    }
+    .video-hero-title {
+      font-family: var(--font-display); font-size: 54px; font-weight: 300;
+      letter-spacing: 0.02em; color: #FFF; line-height: 1.2;
+    }
+    .cta-link {
+      display: flex; align-items: center; gap: 8px; color: #FFF;
+      font-size: 15.2px; font-weight: 600; letter-spacing: 0.025em;
+    }
+    .cta-link svg { width: 14px; height: 14px; }
+
+    /* ── Slideshow / Full-height Hero ── */
+    .slideshow-hero {
+      position: relative; width: 100%; height: 100vh; overflow: hidden;
+      background: var(--surface-dark);
+    }
+    .slideshow-hero img {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    }
+    .slideshow-hero .overlay {
+      position: absolute; inset: 0; background: rgba(33,35,38,0.08);
+    }
+    .slideshow-content {
+      position: absolute; inset: 0; z-index: 2;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; gap: 18px;
+    }
+    .slideshow-label {
+      font-family: var(--font-display); font-size: 14.4px; font-weight: 300;
+      letter-spacing: 0.2em; text-transform: uppercase; color: #FFF;
+    }
+    .slideshow-title {
+      font-family: var(--font-display); font-size: 57.6px; font-weight: 300;
+      letter-spacing: -0.02em; color: #FFF; line-height: 1;
+    }
+    .slideshow-divider {
+      width: 230px; height: 1px; background: #FFF; opacity: 0.8;
+    }
+    .cta-link-sm {
+      display: flex; align-items: center; gap: 8px; color: #FFF;
+      font-size: 9.5px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
+    }
+    .cta-link-sm svg { width: 14px; height: 14px; }
+
+    /* ── Split Banner ── */
+    .split-banner {
+      display: flex; gap: 4px; position: relative; overflow: hidden;
+    }
+    .split-banner .half {
+      flex: 1; position: relative; overflow: hidden;
+    }
+    .split-banner .half img {
+      width: 100%; height: 700px; object-fit: cover;
+    }
+    .split-banner .split-content {
+      position: absolute; inset: 0; z-index: 2;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; gap: 16px; pointer-events: none;
+    }
+    .split-banner .split-content * { pointer-events: auto; }
+    .split-heading-small { font-family: var(--font-display); font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #FFF; }
+    .split-heading { font-family: var(--font-display); font-size: 44px; font-weight: 300; color: #FFF; line-height: 1.1; }
+    .btn-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 22px; font-size: 12px; font-weight: 600;
+      letter-spacing: 0.05em; color: var(--text-dark);
+      background: #FFF; border: 1px solid #FFF;
+      transition: all var(--transition);
+    }
+    .btn-cta:hover { background: transparent; color: #FFF; }
+    .btn-cta svg { width: 14px; height: 14px; }
+    .btn-outline {
+      background: transparent; color: #FFF; border-color: #FFF;
+    }
+    .btn-outline:hover { background: #FFF; color: var(--text-dark); }
+
+    /* ── Full Banner with Text ── */
+    .text-banner {
+      position: relative; width: 100%; height: 100vh; overflow: hidden;
+    }
+    .text-banner img {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    }
+    .text-banner .overlay {
+      position: absolute; inset: 0; background: rgba(33,35,38,0.04);
+    }
+    .text-banner-content {
+      position: absolute; inset: 0; z-index: 2;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; gap: 16px; color: #FFF;
+    }
+    .text-banner-content .label {
+      font-family: var(--font-display); font-size: 14.4px; letter-spacing: 0.2em; text-transform: uppercase;
+    }
+    .text-banner-content .title {
+      font-family: var(--font-display); font-size: 48px; font-weight: 300; letter-spacing: -0.02em;
+    }
+
+    /* ── Lookbook ── */
+    .lookbook-section {
+      position: relative; width: 100%; overflow: hidden;
+    }
+    .lookbook-section img { width: 100%; height: auto; display: block; }
+    .hotspot {
+      position: absolute; width: 24px; height: 24px;
+      background: #FFF; border: 2px solid #FFF; border-radius: 50%;
+      transform: translate(-50%, -50%); cursor: pointer;
+      box-shadow: 0 0 0 4px rgba(255,255,255,0.25);
+      transition: all var(--transition); z-index: 3;
+    }
+    .hotspot:hover { transform: translate(-50%, -50%) scale(1.3); }
+    .hotspot-tooltip {
+      position: absolute; bottom: calc(100% + 10px); left: 50%; transform: translateX(-50%);
+      background: #FFF; color: var(--text-primary); white-space: nowrap;
+      padding: 8px 14px; border-radius: 4px; font-size: 12px;
+      opacity: 0; pointer-events: none; transition: opacity var(--transition);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    }
+    .hotspot:hover .hotspot-tooltip { opacity: 1; }
+    .hotspot-tooltip .price { font-size: 11px; color: var(--brand); margin-top: 2px; }
+
+    /* ── Bundle / Gift Package ── */
+    .bundle-section {
+      display: flex; width: 100%; gap: 0;
+    }
+    .bundle-section .bundle-image {
+      flex: 1; position: relative; overflow: hidden;
+    }
+    .bundle-section .bundle-image img {
+      width: 100%; height: 650px; object-fit: cover;
+    }
+    .bundle-section .bundle-info {
+      flex: 1; display: flex; flex-direction: column; justify-content: center;
+      padding: 60px 80px; background: var(--white);
+    }
+    .bundle-info .eyebrow {
+      font-family: var(--font-display); font-size: 14px; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--brand);
+    }
+    .bundle-info .heading {
+      font-family: var(--font-display); font-size: 40px; font-weight: 300;
+      color: var(--text-dark); margin: 8px 0 24px;
+    }
+    .bundle-product {
+      display: flex; align-items: center; gap: 16px; padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .bundle-product img {
+      width: 70px; height: 70px; object-fit: cover; border-radius: 2px;
+    }
+    .bundle-product .prod-info { flex: 1; }
+    .bundle-product .prod-name { font-size: 14px; font-weight: 500; color: var(--text-primary); }
+    .bundle-product .prod-price { font-size: 13px; color: var(--text-muted); }
+    .bundle-product .prod-price .old { text-decoration: line-through; margin-right: 6px; color: var(--text-subtle); }
+    .bundle-product .prod-price .sale { color: var(--brand); }
+    .bundle-add-btn {
+      display: inline-block; margin-top: 20px; padding: 12px 32px;
+      font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+      color: #FFF; background: var(--text-dark); border: 1px solid var(--text-dark);
+      cursor: pointer; transition: all var(--transition);
+    }
+    .bundle-add-btn:hover { background: var(--brand); border-color: var(--brand); }
+
+    /* ── Store Section ── */
+    .store-section {
+      display: flex; width: 100%;
+      background: linear-gradient(147deg, #000, #060606);
+      color: var(--surface-warm);
+    }
+    .store-section .store-info {
+      flex: 1; padding: 80px 60px; display: flex; flex-direction: column; justify-content: center;
+    }
+    .store-info h2 {
+      font-family: var(--font-display); font-size: 38px; font-weight: 300; margin-bottom: 24px;
+    }
+    .store-info .address-block { margin-bottom: 20px; line-height: 1.8; font-size: 15px; }
+    .store-info .address-block strong { color: #FFF; }
+    .store-info .btn-contact {
+      display: inline-block; width: fit-content; padding: 10px 26px;
+      font-size: 12px; font-weight: 600; letter-spacing: 0.05em;
+      color: var(--surface-warm); border: 1px solid var(--surface-warm);
+      transition: all var(--transition);
+    }
+    .store-info .btn-contact:hover { background: var(--surface-warm); color: #000; }
+    .store-section .store-image { flex: 1; }
+    .store-section .store-image img { width: 100%; height: 550px; object-fit: cover; }
+
+    /* ── Reviews Carousel ── */
+    .reviews-section {
+      padding: 50px 20px; text-align: center; background: var(--white);
+    }
+    .reviews-section .reviews-heading {
+      font-family: var(--font-display); font-size: 28px; font-weight: 300;
+      color: var(--text-dark); margin-bottom: 8px;
+    }
+    .reviews-section .reviews-meta {
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      margin-bottom: 32px; font-size: 14px; color: var(--text-muted);
+    }
+    .stars { color: #FFB503; font-size: 20px; letter-spacing: 2px; }
+    .reviews-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+      max-width: 1100px; margin: 0 auto;
+    }
+    .review-card {
+      background: #F9F9F9; border-radius: 8px; padding: 24px 20px; text-align: left;
+    }
+    .review-card .review-stars { color: #108474; font-size: 14px; margin-bottom: 8px; }
+    .review-card .review-text { font-size: 14px; line-height: 1.6; color: var(--text-primary); }
+    .review-card .reviewer { font-size: 12px; color: var(--text-subtle); margin-top: 12px; font-weight: 500; }
+    .review-card .review-product { font-size: 11px; color: var(--text-subtle); margin-top: 4px; }
+
+    /* ── Footer ── */
+    .site-footer { background: var(--white); border-top: 1px solid var(--border); }
+    .footer-grid {
+      max-width: var(--content-w); margin: 0 auto; padding: 50px 20px;
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr; gap: 30px;
+    }
+    .footer-col h4 {
+      font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--text-subtle); margin-bottom: 16px;
+    }
+    .footer-col ul li { margin-bottom: 8px; }
+    .footer-col ul li a { font-size: 13px; color: var(--text-muted); transition: color var(--transition); }
+    .footer-col ul li a:hover { color: var(--text-primary); }
+    .footer-logo { width: 90px; margin-bottom: 12px; }
+    .newsletter-form { display: flex; gap: 0; margin-bottom: 12px; }
+    .newsletter-form input {
+      flex: 1; padding: 10px 14px; font-size: 13px; border: 1px solid rgba(0,0,0,0.14);
+      font-family: var(--font-body); outline: none;
+    }
+    .newsletter-form button {
+      padding: 10px 14px; background: none; border: 1px solid rgba(0,0,0,0.14);
+      border-left: 0; color: var(--text-primary); cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .newsletter-form button svg { width: 16px; height: 16px; }
+    .social-links { display: flex; gap: 12px; margin-top: 12px; }
+    .social-links a { color: var(--text-muted); transition: color var(--transition); }
+    .social-links a:hover { color: var(--text-primary); }
+    .social-links a svg { width: 18px; height: 18px; }
+    .footer-bottom {
+      max-width: var(--content-w); margin: 0 auto; padding: 20px 20px;
+      border-top: 1px solid var(--border); text-align: center;
+      font-size: 12px; color: var(--text-subtle);
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+    }
+    .footer-bottom a { color: var(--text-muted); }
+    .footer-bottom a:hover { color: var(--text-primary); }
+    .footer-policies { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+
+    /* ── Responsive ── */
+    @media (max-width: 1100px) {
+      .footer-grid { grid-template-columns: repeat(3, 1fr); }
+      .bundle-section { flex-direction: column; }
+      .bundle-section .bundle-image img { height: 400px; }
+      .bundle-section .bundle-info { padding: 40px 30px; }
+      .store-section { flex-direction: column; }
+      .store-section .store-info { padding: 40px 30px; }
+      .split-banner .half img { height: 450px; }
+      .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .slideshow-title { font-size: 40px; }
+      .video-hero-title { font-size: 36px; }
+      .text-banner { height: 60vh; }
+      .nav-list a { padding: 8px 10px; font-size: 10px; }
+      .hero-heading { font-size: 32px; }
+      .hero-tile-category { font-size: 12px; }
+      .hero-tile { aspect-ratio: 4 / 5; }
+      .trust-band__track { gap: 32px; animation-duration: 25s; }
+      .trust-band__label { font-size: 12px; }
+      .trust-band__icon { width: 22px; height: 22px; }
+      .trust-band__sep { width: 3px; height: 3px; }
+    }
+    @media (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .split-banner .half img { height: 300px; }
+      .split-banner { gap: 2px; }
+      .split-banner .half:nth-child(odd) { width: 49.25%; flex: none; }
+      .split-banner .half:nth-child(even) { width: 49.25%; flex: none; }
+      .split-heading { font-size: 24px; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .slideshow-title { font-size: 32px; }
+      .slideshow-hero { height: 60vh; }
+      .video-hero { height: 400px; }
+      .video-hero-title { font-size: 28px; }
+      .text-banner { height: 300px; }
+      .text-banner-content .title { font-size: 28px; }
+      .nav-bar { display: none; }
+      .header-top { height: 56px; }
+      .header-logo { width: 80px; height: 40px; }
+      .header-logo img { width: 80px; height: 40px; }
+      .bundle-info .heading { font-size: 28px; }
+      .store-section .store-image img { height: 300px; }
+      .hero { padding: 32px 16px 16px; }
+      .hero-eyebrow { font-size: 10px; letter-spacing: 0.12em; }
+      .hero-heading { font-size: 24px; margin-bottom: 24px; }
+      .hero-grid { grid-template-columns: 1fr 1fr; gap: 3px; }
+      .hero-tile { aspect-ratio: 1 / 1; }
+      .hero-tile-category { font-size: 11px; }
+      .trust-band { padding: 18px 0; }
+      .trust-band__track { gap: 28px; animation-duration: 20s; }
+      .trust-band__icon { width: 20px; height: 20px; }
+      .trust-band__label { font-size: 11px; }
+    }
+    @media (max-width: 480px) {
+      .slideshow-title { font-size: 24px; }
+      .slideshow-hero { height: 50vh; }
+      .video-hero { height: 340px; }
+      .video-hero-title { font-size: 22px; }
+      .text-banner { height: 250px; }
+      .announce-bar { font-size: 11px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .hero { padding: 24px 12px 12px; }
+      .hero-heading { font-size: 20px; margin-bottom: 20px; }
+      .hero-grid { grid-template-columns: 1fr 1fr; gap: 2px; }
+      .hero-tile { aspect-ratio: 3 / 4; }
+      .hero-tile-category { font-size: 10px; }
+    }
+
+    /* ── Desktop: tiles behind header ── */
+    @media (min-width: 1101px) {
+      .site-header {
+        background: rgba(255,255,255,0.998);
+        box-shadow: 0 0.95px 0 rgba(210,213,217,0.3);
+      }
+      .hero {
+        padding: 48px 20px 4px;
+        background: #FFFFFF;
+        position: relative;
+      }
+      .hero-tile {
+        aspect-ratio: 397 / 468;
+      }
+      .hero-top-overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        padding: 20px 37px 80px;
+        background: linear-gradient(
+          180deg,
+          #FFFFFF 22.12%,
+          rgba(255,255,255,0.89375) 34.62%,
+          rgba(255,255,255,0.7375) 48.56%,
+          rgba(255,255,255,0) 99.52%
+        );
+        pointer-events: none;
+      }
+      .hero-inner > .hero-eyebrow,
+      .hero-inner > .hero-heading {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Announcement Bar ── -->
+  <div class="announce-bar">
+    Free shipping over $50
+    <span class="announce-dot" aria-hidden="true"></span>
+    Up to 60% off select styles
+  </div>
+
+  <!-- ── Header ── -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="header-icons">
+        <button class="icon-btn" aria-label="Search">
+          <svg viewBox="0 0 19 19" fill="none"><circle cx="7.5" cy="7.5" r="5" stroke="currentColor" stroke-width="1.23"/><line x1="11.5" y1="11.5" x2="16" y2="16" stroke="currentColor" stroke-width="1.23"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Menu">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M0 26.667h32M0 16h26.98M0 5.333h32" stroke="currentColor"/></svg>
+        </button>
+      </div>
+      <a href="/" class="header-logo">
+        <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/adee-logo(2).png" alt="Adee" width="103" height="50">
+      </a>
+      <div class="header-icons">
+        <button class="icon-btn" aria-label="Account">
+          <svg viewBox="0 0 15 17" fill="none"><circle cx="7.5" cy="5" r="3.75" stroke="currentColor" stroke-width="1.5"/><path d="M1 16c0-3.59 2.91-6.5 6.5-6.5S14 12.41 14 16" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Cart">
+          <svg viewBox="0 0 19 19" fill="none"><rect x="1" y="6" width="17" height="12" rx="0.87" stroke="currentColor" stroke-width="0.87"/><line x1="6.5" y1="2" x2="6.5" y2="6" stroke="currentColor" stroke-width="0.87"/><line x1="12.05" y1="2" x2="12.05" y2="6" stroke="currentColor" stroke-width="0.87"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="nav-bar">
+      <ul class="nav-list">
+        <li><a href="https://adeeclothing.com/collections/new-arrivals">New Arrivals</a></li>
+        <li><a href="https://adeeclothing.com/collections/baby-clothes">Baby</a></li>
+        <li><a href="https://adeeclothing.com/collections/girls-clothes">Girls</a></li>
+        <li><a href="https://adeeclothing.com/collections/boys-clothes">Boys</a></li>
+        <li><a href="https://adeeclothing.com/collections/outfits-for-baby">Daywear</a></li>
+        <li><a href="https://adeeclothing.com/collections/kids-formal-wear">Dresswear</a></li>
+        <li><a href="https://adeeclothing.com/collections/accessories">Accessories</a></li>
+        <li><a href="https://adeeclothing.com/collections/baby-toddler-kids-clothes-sale">Sale</a></li>
+        <li><a href="https://adeeclothing.com/pages/gifts-under-50">Gifts</a></li>
+        <li class="nav-highlight"><a href="https://adeeclothing.com/collections/bon-ami">Bon Ami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-top-overlay">
+        <p class="hero-eyebrow">New Season, Every Age</p>
+        <h1 class="hero-heading">Dressed for the Moments That Matter</h1>
+      </div>
+      <p class="hero-eyebrow">New Season, Every Age</p>
+      <h1 class="hero-heading">Dressed for the Moments That Matter</h1>
+      <div class="hero-grid">
+        <a href="https://adeeclothing.com/collections/baby-clothes" class="hero-tile hero-tile--baby" style="background-image: url('Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/A1A02930_copy.jpg');">
+          <span class="hero-tile-category">Shop Baby</span>
+        </a>
+        <a href="https://adeeclothing.com/collections/girls-clothes" class="hero-tile hero-tile--girls" style="background-image: url('Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/For girls.png');">
+          <span class="hero-tile-category">Shop Girls</span>
+        </a>
+        <a href="https://adeeclothing.com/collections/boys-clothes" class="hero-tile hero-tile--boys" style="background-image: url('Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/2E2A6689.jpg');">
+          <span class="hero-tile-category">Shop Boys</span>
+        </a>
+        <a href="https://adeeclothing.com/collections/outfits-for-baby" class="hero-tile hero-tile--family" style="background-image: url('Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/family_set.png');">
+          <span class="hero-tile-category">Shop Family Sets</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Trust Band ── -->
+  <section class="trust-band">
+    <div class="trust-band__track">
+      <div class="trust-band__item">
+        <div class="trust-band__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 4l3.09 6.26L26 11.27l-5 4.87 1.18 6.86L16 20.1l-6.18 3.9L11 16.14l-5-4.87 6.91-1.01L16 4z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <span class="trust-band__label">Rated 4.8 by Our Customers</span>
+      </div>
+      <span class="trust-band__sep"></span>
+      <a href="/pages/contact" class="trust-band__item" aria-label="Boutique Stores in Cedarhurst, Pomona and Jerusalem">
+        <div class="trust-band__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 6c-4.4 0-8 3.6-8 8 0 6 8 14 8 14s8-8 8-14c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <span class="trust-band__label">Boutique Stores in Cedarhurst, Pomona and Jerusalem</span>
+      </a>
+      <span class="trust-band__sep"></span>
+      <a href="/policies/shipping-policy" class="trust-band__item" aria-label="Free Shipping on Orders $50+">
+        <div class="trust-band__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><rect x="1" y="10" width="22" height="16" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M23 18h4l4 4v4h-5M8 28a3 3 0 100-6 3 3 0 000 6zM24 28a3 3 0 100-6 3 3 0 000 6z" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <span class="trust-band__label">Free Shipping on Orders $50+</span>
+      </a>
+      <span class="trust-band__sep"></span>
+      <a href="/pages/contact" class="trust-band__item" aria-label="Text or Call Us, We're Real People">
+        <div class="trust-band__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M4 6c0-1.1.9-2 2-2h6l2.5 7-3.5 2c2 4.5 5.5 8 10 10l2-3.5 7 2.5v6c0 1.1-.9 2-2 2A24 24 0 014 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="trust-band__label">Text or Call Us, We're Real People</span>
+      </a>
+      <span class="trust-band__sep"></span>
+      <a href="/pages/gifts-under-50" class="trust-band__item" aria-label="Gift Wrapping and Curated Gift Sets">
+        <div class="trust-band__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 2c-3.5 0-6.3 2.5-7.5 6 1.2-3.5 4-6 7.5-6s6.3 2.5 7.5 6c-1.2-3.5-4-6-7.5-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="6" y="14" width="20" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="9" width="22" height="5" rx="1.5" stroke="currentColor" stroke-width="1.5"/><line x1="16" y1="9" x2="16" y2="26" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <span class="trust-band__label">Gift Wrapping and Curated Gift Sets</span>
+      </a>
+      <span class="trust-band__sep"></span>
+      <div class="trust-band__item">
+        <div class="trust-band__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 4l3.09 6.26L26 11.27l-5 4.87 1.18 6.86L16 20.1l-6.18 3.9L11 16.14l-5-4.87 6.91-1.01L16 4z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <span class="trust-band__label">Rated 4.8 by Our Customers</span>
+      </div>
+      <span class="trust-band__sep"></span>
+      <a href="/pages/contact" class="trust-band__item" aria-label="Boutique Stores in Cedarhurst, Pomona and Jerusalem">
+        <div class="trust-band__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 6c-4.4 0-8 3.6-8 8 0 6 8 14 8 14s8-8 8-14c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </div>
+        <span class="trust-band__label">Boutique Stores in Cedarhurst, Pomona and Jerusalem</span>
+      </a>
+      <span class="trust-band__sep"></span>
+      <a href="/policies/shipping-policy" class="trust-band__item" aria-label="Free Shipping on Orders $50+">
+        <div class="trust-band__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><rect x="1" y="10" width="22" height="16" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M23 18h4l4 4v4h-5M8 28a3 3 0 100-6 3 3 0 000 6zM24 28a3 3 0 100-6 3 3 0 000 6z" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <span class="trust-band__label">Free Shipping on Orders $50+</span>
+      </a>
+      <span class="trust-band__sep"></span>
+      <a href="/pages/contact" class="trust-band__item" aria-label="Text or Call Us, We're Real People">
+        <div class="trust-band__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M4 6c0-1.1.9-2 2-2h6l2.5 7-3.5 2c2 4.5 5.5 8 10 10l2-3.5 7 2.5v6c0 1.1-.9 2-2 2A24 24 0 014 6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="trust-band__label">Text or Call Us, We're Real People</span>
+      </a>
+      <span class="trust-band__sep"></span>
+      <a href="/pages/gifts-under-50" class="trust-band__item" aria-label="Gift Wrapping and Curated Gift Sets">
+        <div class="trust-band__icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 2c-3.5 0-6.3 2.5-7.5 6 1.2-3.5 4-6 7.5-6s6.3 2.5 7.5 6c-1.2-3.5-4-6-7.5-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="6" y="14" width="20" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="5" y="9" width="22" height="5" rx="1.5" stroke="currentColor" stroke-width="1.5"/><line x1="16" y1="9" x2="16" y2="26" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
+        <span class="trust-band__label">Gift Wrapping and Curated Gift Sets</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── 2. Sun & Fun Video Hero ── -->
+  <section class="video-hero">
+    <video playsinline autoplay loop muted poster="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/4fd806a0ed0a458d8ad05d6193b46606.thumbnail.0000000000_small.jpg">
+      <source src="https://adeeclothing.com/cdn/shop/videos/c/vp/4fd806a0ed0a458d8ad05d6193b46606/4fd806a0ed0a458d8ad05d6193b46606.HD-1080p-7.2Mbps-71131149.mp4?v=0" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="video-hero-content">
+      <h2 class="video-hero-title">Sun &amp; Fun</h2>
+      <a href="https://adeeclothing.com/collections/new-arrivals" class="cta-link">
+        SHOP S/S '26
+        <svg viewBox="0 0 14 14"><path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── 3. Blue Floral Family Set ── -->
+  <section class="slideshow-hero">
+    <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/899ChatGPT-Image-Jan-20_-2026_-10_48_07-PM-Firefly-Upscaler-2x-scale.jpg" alt="Blue Floral Family Set">
+    <div class="overlay"></div>
+    <div class="slideshow-content">
+      <p class="slideshow-label">Blue Floral</p>
+      <h1 class="slideshow-title">Family Set</h1>
+      <div class="slideshow-divider"></div>
+      <a href="https://adeeclothing.com/collections/blue-flower" class="cta-link-sm">
+        Shop the look
+        <svg viewBox="0 0 14 14"><path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── 4. Dresswear Sets ── -->
+  <section class="split-banner">
+    <div class="half">
+      <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/family_set.png" alt="Family Set" style="object-position: 46% 35%;">
+    </div>
+    <div class="half">
+      <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/ONE05966_copy_472ffc6d-5893-46d1-8458-b607168e527a.jpg" alt="Dresswear" style="object-position: 47% 20%;">
+    </div>
+    <div class="split-content">
+      <h2 class="split-heading">Dresswear Sets</h2>
+      <a href="https://adeeclothing.com/collections/kids-formal-wear" class="btn-cta">
+        Shop dressy
+        <svg viewBox="0 0 14 14"><path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── 5. Lookbook ── -->
+  <section class="lookbook-section">
+    <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/ChatGPT-Image-Feb-8_-2026_-09_15_49-PM-Firefly-Upscaler-2x-scale.jpg" alt="Shop the Look" style="object-position: 50% 49%;">
+    <a href="https://adeeclothing.com/products/pink-heart-nightgown" class="hotspot" style="left: 35%; top: 70%;" aria-label="Pink Heart Nightgown">
+      <span class="hotspot-tooltip">Pink Heart Nightgown<br><span class="price">$16.80 <s style="color:#999">$42.00</s></span></span>
+    </a>
+    <a href="https://adeeclothing.com/products/light-blue-striped-star-boys-pajamas-ssad1004" class="hotspot" style="left: 79%; top: 74%;" aria-label="Blue Star Pajamas">
+      <span class="hotspot-tooltip">Blue Star Pajamas<br><span class="price">$16.80 <s style="color:#999">$42.00</s></span></span>
+    </a>
+    <a href="https://adeeclothing.com/products/baby-jumpsuit-girls-pink-hearts-ssad1001a" class="hotspot" style="left: 62%; top: 65%;" aria-label="Pink Heart Stretchy">
+      <span class="hotspot-tooltip">Pink Heart Stretchy with Lace<br><span class="price">$23.10 <s style="color:#999">$33.00</s></span></span>
+    </a>
+  </section>
+
+  <!-- ── 6. Everyday Explorers ── -->
+  <section class="split-banner">
+    <div class="half">
+      <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/TWO00309_copy.jpg" alt="Boy in Map T-shirt" style="object-position: 49% 24%;">
+    </div>
+    <div class="half">
+      <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/ONE05122_copy_bcd00847-4760-4fd6-b668-5fc88a108efb.jpg" alt="Toddler in geometric tee" style="object-position: 52% 29%;">
+    </div>
+    <div class="split-content">
+      <h2 class="split-heading">Everyday Explorers</h2>
+      <a href="https://adeeclothing.com/collections/boys-clothing" class="btn-cta">
+        Shop Boys Daywear
+        <svg viewBox="0 0 14 14"><path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── 7. Elevated Looks — For Every Day ── -->
+  <section class="text-banner">
+    <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/TWO00214_copy.jpg" alt="Neon Striped Collection" style="object-position: 46% 59%;">
+    <div class="overlay"></div>
+    <div class="text-banner-content">
+      <p class="label">Elevated Looks</p>
+      <h2 class="title">For Every Day</h2>
+      <a href="https://adeeclothing.com/collections/boys-clothing" class="btn-cta">
+        Shop the Neon Striped Collection
+        <svg viewBox="0 0 14 14"><path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── 8. Play Time ── -->
+  <section class="split-banner">
+    <div class="half">
+      <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/ONE05487_copy.jpg" alt="Girl playing" style="object-position: 50% 43%;">
+    </div>
+    <div class="half">
+      <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/2girls_play1_3cffc5b4-5563-4a25-842d-e1546500db0d.png" alt="Girls playing" style="object-position: 49% 31%;">
+    </div>
+    <div class="split-content">
+      <p class="split-heading-small">day time</p>
+      <h2 class="split-heading">Play Time</h2>
+      <a href="https://adeeclothing.com/collections/outfits-for-girls" class="btn-cta">
+        Shop girls daywear
+        <svg viewBox="0 0 14 14"><path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── 9. Coordinated Lounge Wear ── -->
+  <section class="slideshow-hero">
+    <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/ChatGPT-Image-Feb-8_-2026_-09_29_01-PM-Firefly-Upscaler-2x-scale.jpg" alt="Lounge Wear" style="object-position: 50% 49%;">
+    <div class="overlay"></div>
+    <div class="slideshow-content">
+      <p class="slideshow-label">Coordinated</p>
+      <h2 class="slideshow-title">Lounge Wear</h2>
+      <div class="slideshow-divider"></div>
+      <a href="https://adeeclothing.com/collections/pajamas" class="cta-link-sm">
+        Shop PJs
+        <svg viewBox="0 0 14 14"><path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── 10. Gift Package ── -->
+  <section class="bundle-section">
+    <div class="bundle-image">
+      <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/gifts.jpg" alt="Gift Package" style="object-position: 50% 36%;">
+    </div>
+    <div class="bundle-info">
+      <p class="eyebrow">Baby girl, boy and siblings</p>
+      <h2 class="heading">Gift Package</h2>
+
+      <div class="bundle-product">
+        <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/final-18.jpg" alt="Red Flower Stretchy">
+        <div class="prod-info">
+          <div class="prod-name">Red Flower Stretchy</div>
+          <div class="prod-price"><span class="old">$33.00</span><span class="sale">$23.10</span></div>
+        </div>
+      </div>
+      <div class="bundle-product">
+        <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/1_9d4a98e9-3e97-472f-9b75-b6523302f269.jpg" alt="Red Flower Bonnet">
+        <div class="prod-info">
+          <div class="prod-name">Red Flower Bonnet</div>
+          <div class="prod-price"><span class="old">$12.00</span><span class="sale">$8.40</span></div>
+        </div>
+      </div>
+      <div class="bundle-product">
+        <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/final-62.jpg" alt="Pointelle Floral Romper">
+        <div class="prod-info">
+          <div class="prod-name">Pointelle Floral Romper</div>
+          <div class="prod-price"><span class="old">$36.00</span><span class="sale">$14.40</span></div>
+        </div>
+      </div>
+      <div class="bundle-product">
+        <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/BOX_04_22eea01b-37e1-40f4-b802-7a009cf6e818.jpg" alt="Wrapping">
+        <div class="prod-info">
+          <div class="prod-name">Wrapping</div>
+          <div class="prod-price">$0.00</div>
+        </div>
+      </div>
+
+      <a href="https://adeeclothing.com/pages/gifts-under-50" class="bundle-add-btn">Add set to cart</a>
+    </div>
+  </section>
+
+  <!-- ── 11. Gifting ── -->
+  <section class="split-banner">
+    <div class="half">
+      <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/A1A04545_copy.jpg" alt="Gifting">
+    </div>
+    <div class="half">
+      <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/A1A03044_copy.jpg" alt="Gift Package">
+    </div>
+    <div class="split-content">
+      <p class="split-heading-small">Gifting</p>
+      <p style="color:#FFF;font-size:14px;max-width:320px;line-height:1.6;">Buy a layette and add a gift wrap to your order, or choose a pre-packaged gift set.</p>
+      <a href="https://adeeclothing.com/pages/gifts-under-50" class="btn-cta">
+        Shop Gift Packages
+        <svg viewBox="0 0 14 14"><path d="M2 7h10M7.5 2.5L12 7l-4.5 4.5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── 12. Our Store ── -->
+  <section class="store-section">
+    <div class="store-info">
+      <h2>Our Store</h2>
+      <div class="address-block">
+        Pomona Shop<br>
+        1581 US-202 Unit 15,<br>
+        Pomona, NY 10970
+      </div>
+      <div class="address-block">
+        Jerusalem Shop<br>
+        28 Yirmiyahu st. Jerusalem, Israel
+      </div>
+      <div class="address-block">
+        315 Central Ave<br>
+        Lawrence, NY 11559<br>
+        <strong>Call/txt/whatsapp: 8483348761</strong>
+      </div>
+      <a href="https://adeeclothing.com/pages/contact" class="btn-contact">Contact</a>
+    </div>
+    <div class="store-image">
+      <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/IMG_0251.jpg" alt="Adee Store">
+    </div>
+  </section>
+
+  <!-- ── 13. Customer Reviews ── -->
+  <section class="reviews-section">
+    <h2 class="reviews-heading">Customers are saying</h2>
+    <div class="reviews-meta">
+      <span class="stars">★★★★★</span>
+      <span>4.81 ★ (123)</span>
+      <span style="color:#108474;">&#10003; Verified</span>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Adorable</p>
+        <p class="reviewer">Rikki Ausch</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">In store experiences is friendly and kind with unbelievable staff!</p>
+        <p class="reviewer">Miriam Wolner</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Adee always has the most unique prints and such a beautiful fit that looks good all the way until the baby's toes grow out of the stretchie!</p>
+        <p class="reviewer">Miriam Wolner</p>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Fresh look and easy to put on!</p>
+        <p class="reviewer">Anonymous</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="./Adee_ Cute Newborn Baby Toddler Kids Clothes - Matching Family Outfits_files/adee-logo(2).png" alt="Adee" class="footer-logo" width="90" height="44">
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="https://adeeclothing.com/collections/baby-clothes">All Baby</a></li>
+          <li><a href="https://adeeclothing.com/collections/boys-clothes">All Boys</a></li>
+          <li><a href="https://adeeclothing.com/collections/girls-clothes">All Girls</a></li>
+          <li><a href="https://adeeclothing.com/collections/pajamas">Pajamas</a></li>
+          <li><a href="https://adeeclothing.com/collections/baby-toddler-kids-clothes-sale">Sale</a></li>
+          <li><a href="https://adeeclothing.com/collections/">All Collections</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More</h4>
+        <ul>
+          <li><a href="https://adeeclothing.com/apps/returns">Returns Portal</a></li>
+          <li><a href="https://adeeclothing.com/policies/refund-policy">Return Policy</a></li>
+          <li><a href="https://adeeclothing.com/policies/shipping-policy">Shipping Policy</a></li>
+          <li><a href="https://adeeclothing.com/pages/contact">Contact</a></li>
+          <li><a href="https://adeeclothing.com/blogs/insights">Adee's Insights</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Locations</h4>
+        <p style="font-size:13px;color:var(--text-muted);line-height:1.8;">
+          Pomona<br>Cedarhurst<br>Jerusalem
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Keep me Posted</h4>
+        <form class="newsletter-form" action="https://adeeclothing.com/contact#ContactFooter" method="post">
+          <input type="email" name="contact[email]" placeholder="Enter email here" required>
+          <button type="submit" aria-label="Subscribe">
+            <svg viewBox="0 0 14 10"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          </button>
+        </form>
+        <p style="font-size:12px;color:var(--text-subtle);margin-bottom:12px;">Get ready for some seriously beautiful content.</p>
+        <h4>More precious moments</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/adee.kids.clothing/" aria-label="Facebook">
+            <svg viewBox="0 0 320 512"><path stroke="currentColor" stroke-width="1.5" fill="none" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/adee.kids.clothing" aria-label="Instagram">
+            <svg viewBox="0 0 448 512"><path stroke="currentColor" stroke-width="1.5" fill="none" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 <a href="https://adeeclothing.com/">Adee</a>. All rights reserved.</p>
+      <div class="footer-policies">
+        <a href="https://adeeclothing.com/policies/refund-policy">Refund policy</a>
+        <a href="https://adeeclothing.com/policies/privacy-policy">Privacy policy</a>
+        <a href="https://adeeclothing.com/policies/terms-of-service">Terms of service</a>
+        <a href="https://adeeclothing.com/policies/shipping-policy">Shipping policy</a>
+        <a href="https://adeeclothing.com/policies/contact-information">Contact information</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
