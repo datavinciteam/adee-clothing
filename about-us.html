@@ -870,34 +870,12 @@
       }
 
       .main-nav-bar {
-        position: sticky;
-        top: 62px;
-        z-index: 299;
-        background: var(--white);
-        border-top: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-      }
-      .main-nav-bar::-webkit-scrollbar { display: none; }
-      .main-nav {
-        padding: 0 14px;
-        height: 44px;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        gap: 0;
-      }
-      .main-nav li { flex-shrink: 0; }
-      .main-nav li a {
-        padding: 10px 14px;
-        font-size: 10px;
-        white-space: nowrap;
+        display: none;
       }
 
       /* Section nav */
       .section-nav {
-        top: 106px;
+        top: 62px;
         width: 100%;
         height: auto;
         position: sticky;
@@ -945,7 +923,7 @@
       #our-mission,
       #collections,
       #why-adee {
-        scroll-margin-top: 160px;
+        scroll-margin-top: 145px;
       }
 
       /* Hero */
@@ -1141,7 +1119,7 @@
       .site-footer { display: none; }
       .mobile-footer { display: block; }
     }
-    @media (max-width: 1024px) {
+    @media (min-width: 769px) and (max-width: 1024px) {
       .main-nav-bar { display: none; }
       .our-story { flex-direction: column; }
       .our-story__image { flex: auto; min-height: 350px; }
