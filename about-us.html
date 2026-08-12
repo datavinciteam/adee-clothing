@@ -109,6 +109,8 @@
       padding: 0;
     }
     .icon-btn svg { width: 19px; height: 19px; }
+    .icon-btn[aria-label="Cart"] { width: 44px; height: 44px; }
+    .icon-btn[aria-label="Cart"] svg { width: 23px; height: 23px; }
 
     .main-nav {
       display: flex;
@@ -149,11 +151,20 @@
     .hero {
       position: relative;
       height: 450px;
-      background: #D5C8C2 url('HERO 3.png') center/cover no-repeat;
+      background: #D5C8C2 url('imgi_83_main.jpg') center 20%/cover no-repeat;
       display: flex;
       align-items: center;
     }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.5) 100%);
+      pointer-events: none;
+    }
     .hero__content {
+      position: relative;
+      z-index: 1;
       max-width: var(--content-w);
       margin: 0 auto;
       padding: 0 60px;
@@ -164,7 +175,7 @@
       font-size: 42px;
       font-weight: 300;
       line-height: 1.143;
-      color: var(--text-primary);
+      color: #FFFFFF;
       max-width: 480px;
     }
     .hero__sub {
@@ -172,7 +183,7 @@
       font-size: 18px;
       font-weight: 700;
       line-height: 1.5;
-      color: rgba(33, 35, 38, 0.68);
+      color: rgba(255, 255, 255, 0.88);
       max-width: 360px;
       margin-top: 13px;
     }
@@ -197,7 +208,8 @@
     .section-nav__list a {
       display: flex;
       align-items: center;
-      padding: 10px 24px;
+      height: 48px;
+      padding: 0 24px;
       font-family: var(--font-body);
       font-size: 11px;
       font-weight: 400;
@@ -208,6 +220,7 @@
     }
     .section-nav__list a.active,
     .section-nav__list a:hover { color: var(--brand); }
+    .section-nav__list a.active { border-bottom: 2px solid var(--brand); }
 
     #our-story,
     #our-mission,
@@ -223,7 +236,7 @@
     }
     .our-story__image {
       flex: 0 0 calc(100% * 1112 / 1920);
-      background: #D5C8C2 url('passion.png') center/cover no-repeat;
+      background: #D5C8C2 url('section 1.jpg') center/cover no-repeat;
       min-height: 500px;
     }
     .our-story__image::after {
@@ -268,7 +281,7 @@
       right: 40px;
       top: 0;
       opacity: 0.18;
-      filter: brightness(0.4);
+      filter: brightness(0.5) contrast(1.4);
       pointer-events: none;
       user-select: none;
     }
@@ -336,16 +349,16 @@
       border-radius: 2px;
     }
     .collection-article__image--baby {
-      background: #D5C8C2 url('baby clothing.png') center/cover no-repeat;
+      background: #D5C8C2 url('baby.png') center/cover no-repeat;
     }
     .collection-article__image--girls {
-      background: #D5C8C2 url('girl clothing.png') center/cover no-repeat;
+      background: #D5C8C2 url('girls clothing.jpg') center/cover no-repeat;
     }
     .collection-article__image--boys {
-      background: #D5C8C2 url('boy clothing.png') center/cover no-repeat;
+      background: #D5C8C2 url('boys.jpg') center/cover no-repeat;
     }
     .collection-article__image--bonami {
-      background: #D5C8C2 url('bon ami.png') center/cover no-repeat;
+      background: #D5C8C2 url('gifting.jpg') center/cover no-repeat;
     }
     .collection-article__content {
       flex: 0 0 405px;
@@ -533,6 +546,7 @@
       font-size: 12.4px;
       color: var(--text-muted);
       letter-spacing: 0.038em;
+      padding-top: 12px;
     }
     .footer-social {
       margin-top: 16px;
@@ -782,6 +796,7 @@
       font-size: 12.4px;
       color: var(--text-muted);
       margin-top: 8px;
+      padding-top: 4px;
     }
     .mfsocial {
       margin-top: 16px;
@@ -902,7 +917,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px 12px;
+        padding: 15px 12px;
         height: auto;
         font-size: 12px;
         line-height: 1.5;
@@ -910,7 +925,7 @@
         text-transform: uppercase;
         white-space: nowrap;
       }
-      .section-nav__list a.active { color: var(--brand); }
+      .section-nav__list a.active { color: var(--brand); border-bottom: 2px solid var(--brand); }
       .section-nav__break {
         width: 100%;
         height: 0;
@@ -935,8 +950,8 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 12px 32px 44px;
-        justify-content: flex-start;
+        padding: 12px 32px 80px;
+        justify-content: flex-end;
       }
       .hero::before {
         content: '';
@@ -945,7 +960,7 @@
         left: 0;
         right: 0;
         top: 0;
-        background: url('HERO 3.png') bottom / auto 90% no-repeat;
+        background: url('imgi_83_main.jpg') center/cover no-repeat;
         pointer-events: none;
       }
       .hero::after {
@@ -954,8 +969,8 @@
         left: 0;
         right: 0;
         top: 0;
-        height: 90px;
-        background: linear-gradient(to bottom, #F3F3F3 0%, #F3F3F3 50%, rgba(243, 243, 243, 0) 100%);
+        height: 543px;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.5) 100%);
         pointer-events: none;
       }
       .hero__content {
@@ -973,7 +988,7 @@
         max-width: 325px;
       }
       .hero__sub {
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 1.5;
         text-align: center;
